@@ -15,6 +15,7 @@ COPY Gemfile $APP_PATH
 COPY Gemfile.lock $APP_PATH
 
 RUN gem install bundler && bundle install
+RUN bundle exec rake db:migrate
 
 EXPOSE $APP_PORT
 
