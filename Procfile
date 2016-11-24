@@ -1,1 +1,1 @@
-rails: bundle exec rails s -b 0.0.0.0
+rails: bundle exec rails s -p 3000 -b 0.0.0.0
