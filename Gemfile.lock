@@ -74,6 +74,8 @@ GEM
     clockwork (2.0.0)
       activesupport
       tzinfo
+    codeclimate-test-reporter (1.0.3)
+      simplecov
     coercible (1.0.0)
       descendants_tracker (~> 0.0.1)
     coffee-script-source (1.10.0)
@@ -257,6 +259,7 @@ DEPENDENCIES
   byebug
   capybara
   clockwork
+  codeclimate-test-reporter (~> 1.0.0)
   database_cleaner
   factory_girl_rails
   ffaker
