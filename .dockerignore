@@ -1,0 +1,8 @@
+*.rdb
+.DS_Store
+.byebug_history
+.git
+coverage
+db/*.sqlite3
+log/*
+tmp/*
