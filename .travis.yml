@@ -1,5 +1,11 @@
-before_install: gem install bundler -v 1.13.6
-cache: bundler
 language: ruby
-script: bundle exec rails test
-sudo: false
+
+cache:
+  - bundler
+
+before_install:
+  - gem install bundler -v 1.13.6
+  - npm install -g phantomjs-prebuilt
+
+script:
+  - bundle exec rails test
