@@ -1,4 +1,6 @@
 [![Build Status](https://travis-ci.org/xamut/exchange_rates_monitor.svg?branch=master)](https://travis-ci.org/xamut/exchange_rates_monitor)
+[![Code Climate](https://codeclimate.com/github/xamut/exchange_rates_monitor/badges/gpa.svg)](https://codeclimate.com/github/xamut/exchange_rates_monitor)
+[![Test Coverage](https://codeclimate.com/github/xamut/exchange_rates_monitor/badges/coverage.svg)](https://codeclimate.com/github/xamut/exchange_rates_monitor/coverage)
 
 # 1. Dependencies
 ## 1.1. With Docker
