@@ -13,3 +13,4 @@ before_install:
 
 script:
   - bundle exec rails test
+  - bundle exec codeclimate-test-reporter
