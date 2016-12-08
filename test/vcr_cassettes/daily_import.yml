@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.cbr.ru/scripts/XML_dynamic.asp?VAL_NM_RQ=R01235&date_req1=24/11/2016&date_req2=24/11/2016
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.11.5
+      Date:
+      - Thu, 01 Dec 2016 10:06:30 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      X-Powered-By:
+      - ASP.NET
+    body:
+      encoding: ASCII-8BIT
+      string: "<?xml version=\"1.0\" encoding=\"windows-1251\" ?>\r\n<ValCurs  ID=\"R01235\"
+        DateRange1=\"24.11.2016\" DateRange2=\"24.11.2016\"   name=\"Foreign Currency
+        Market Dynamic\">\r\n<Record Date=\"24.11.2016\" Id=\"R01235\"><Nominal>1</Nominal><Value>64,0087</Value></Record>\r\n</ValCurs>\r\n"
+    http_version: 
+  recorded_at: Thu, 01 Dec 2016 10:06:30 GMT
+recorded_with: VCR 3.0.3

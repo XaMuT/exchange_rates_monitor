@@ -11,5 +11,25 @@
 // about supported directives.
 //
 //= require jquery
+//= require moment
+//= require moment/ru
+//= require bootstrap-sprockets
+//= require bootstrap-datetimepicker
 //= require jquery_ujs
+//= require react
+//= require react_ujs
+//= require components
 //= require_tree .
+
+$(function(){
+  var datetimepicker = $('.datetimepicker');
+
+  if (datetimepicker.length > 0) {
+    var datetimeStr = datetimepicker.val() || new Date;
+    var datetime    = moment(datetimeStr);
+
+    datetimepicker.datetimepicker({
+      allowInputToggle: true,
+    }).data('DateTimePicker').defaultDate(datetime);
+  };
+});
