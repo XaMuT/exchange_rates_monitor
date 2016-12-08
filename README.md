@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/XaMuT/exchange_rates_monitor.svg?branch=master)](https://travis-ci.org/XaMuT/exchange_rates_monitor)
+[![Build Status](https://travis-ci.org/xamut/exchange_rates_monitor.svg?branch=master)](https://travis-ci.org/xamut/exchange_rates_monitor)
 
 # 1. Dependencies
 ## 1.1. With Docker
