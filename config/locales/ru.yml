@@ -1,0 +1,9 @@
+ru:
+  activemodel:
+    attributes:
+      web/admin/forced_rate_form:
+        ends_at:      'Действителен до'
+        value:        'Курс в рублях'
+  errors:
+    messages:
+      not_in_future:  'Выберите дату в будущем (> 10 сек)'
