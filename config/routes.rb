@@ -1,3 +1,15 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  mount ActionCable.server => '/cable'
+
+  scope module: :web do
+    namespace :admin do
+      resource :forced_rate, only: [:new, :create], controller: :forced_rate
+
+      root to: 'forced_rate#new'
+    end
+
+    scope module: :public do
+      root to: 'current_rate#show'
+    end
+  end
 end

@@ -1,0 +1,9 @@
+ru:
+  helpers:
+    submit:
+      web_admin_forced_rate_form:
+        create: 'Сохранить форсированный курс'
+  simple_form:
+    required:
+      text:     'обязательное поле'
+      mark:     '*'
