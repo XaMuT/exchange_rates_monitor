@@ -1,7 +1,7 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+currency = Currency.find_or_create_by(name: 'United States Dollar', abbr: 'USD', cbrf_code: 'R01235')
+
+today       = Date.current
+starts_from = today - 7
+ends_to     = today
+
+Import::RateService.call(currency, starts_from.to_s, ends_to.to_s)
