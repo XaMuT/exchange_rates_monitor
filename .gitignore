@@ -22,3 +22,6 @@
 
 # Ignore redis dump file.
 dump.rdb
+
+# Ignore coverage info
+coverage
