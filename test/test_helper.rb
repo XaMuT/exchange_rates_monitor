@@ -9,7 +9,7 @@ require 'rails/test_help'
 require 'capybara/rails'
 require 'capybara/poltergeist'
 require 'database_cleaner'
-require 'factory_girl'
+require 'factory_bot'
 require 'ffaker'
 require 'minitest/reporters'
 require 'vcr'
@@ -37,7 +37,7 @@ class ActiveRecord::Base
 end
 
 class ActiveSupport::TestCase
-  include FactoryGirl::Syntax::Methods
+  include FactoryBot::Syntax::Methods
   include Wrong
 
   def before_setup

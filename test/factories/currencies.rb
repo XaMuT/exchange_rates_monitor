@@ -1,4 +1,4 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :currency do
     abbr      { FFaker::Currency.code }
     name      { FFaker::Currency.name }
