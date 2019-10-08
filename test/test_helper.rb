@@ -7,7 +7,6 @@ require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
 
 require 'capybara/rails'
-require 'capybara/poltergeist'
 require 'database_cleaner'
 require 'factory_bot'
 require 'ffaker'
@@ -15,9 +14,17 @@ require 'minitest/reporters'
 require 'vcr'
 require 'wrong'
 
-DatabaseCleaner.strategy    = :transaction
+# Capybara.register_driver :headless_chrome do |app|
+  # options = Selenium::WebDriver::Chrome::Options.new(args: %w[no-sandbox headless disable-gpu disable-dev-shm-usage])
+
+  # Capybara::Selenium::Driver.new(app, browser: :chrome, options: options)
+# end
+
 Capybara.server             = :puma
-Capybara.javascript_driver  = :poltergeist
+Capybara.javascript_driver = :headless_chrome
+Capybara.javascript_driver  = :selenium_chrome_headless
+
+DatabaseCleaner.strategy    = :transaction
 Minitest::Reporters.use! Minitest::Reporters::ProgressReporter.new
 Wrong.config.color
 
