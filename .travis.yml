@@ -3,13 +3,16 @@ language: ruby
 addons:
   code_climate:
     repo_token: 6ed9c7298dc833b42766938dc28842bd40b73404f10c0541cc4ed5565439668c
+  chrome: stable
+  apt:
+    packages:
+      - chromium-chromedriver
 
 cache:
   - bundler
 
 before_install:
   - gem install bundler -v 1.13.6
-  - npm install -g phantomjs-prebuilt
 
 script:
   - bundle exec rails test
